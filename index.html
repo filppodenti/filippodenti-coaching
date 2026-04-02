@@ -11,41 +11,35 @@
   <style>
     :root {
       --bg: #0b0f14;
-      --bg-soft: #121922;
       --card: #161f2b;
-      --line: rgba(255, 255, 255, 0.08);
+      --line: rgba(255,255,255,0.08);
       --text: #f4f7fb;
       --muted: #b8c2cf;
       --accent: #d7ff5c;
       --accent-dark: #111111;
       --accent-2: #77c7ff;
+      --whatsapp: #25D366;
       --max: 1120px;
       --radius: 22px;
-      --shadow: 0 18px 50px rgba(0, 0, 0, 0.35);
+      --shadow: 0 18px 50px rgba(0,0,0,0.35);
     }
 
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
 
-    html {
-      scroll-behavior: smooth;
-    }
+    html { scroll-behavior: smooth; }
 
     body {
       margin: 0;
       font-family: Arial, Helvetica, sans-serif;
       background:
-        radial-gradient(circle at top right, rgba(119, 199, 255, 0.12), transparent 25%),
-        radial-gradient(circle at top left, rgba(215, 255, 92, 0.1), transparent 18%),
+        radial-gradient(circle at top right, rgba(119,199,255,0.12), transparent 25%),
+        radial-gradient(circle at top left, rgba(215,255,92,0.10), transparent 18%),
         var(--bg);
       color: var(--text);
       line-height: 1.6;
     }
 
-    a {
-      color: inherit;
-    }
+    a { color: inherit; }
 
     .container {
       width: min(var(--max), calc(100% - 32px));
@@ -57,7 +51,7 @@
       top: 0;
       z-index: 20;
       backdrop-filter: blur(10px);
-      background: rgba(11, 15, 20, 0.78);
+      background: rgba(11,15,20,0.78);
       border-bottom: 1px solid var(--line);
     }
 
@@ -92,7 +86,7 @@
 
     .hero-grid {
       display: grid;
-      grid-template-columns: 1.1fr 0.9fr;
+      grid-template-columns: 1.08fr 0.92fr;
       gap: 28px;
       align-items: center;
     }
@@ -104,7 +98,7 @@
       border-radius: 999px;
       color: var(--muted);
       font-size: 13px;
-      background: rgba(255, 255, 255, 0.03);
+      background: rgba(255,255,255,0.03);
       margin-bottom: 18px;
     }
 
@@ -121,13 +115,8 @@
       margin: 0;
     }
 
-    .accent {
-      color: var(--accent);
-    }
-
-    .accent-2 {
-      color: var(--accent-2);
-    }
+    .accent { color: var(--accent); }
+    .accent-2 { color: var(--accent-2); }
 
     .actions {
       display: flex;
@@ -149,9 +138,7 @@
       border: 1px solid transparent;
     }
 
-    .btn:hover {
-      transform: translateY(-1px);
-    }
+    .btn:hover { transform: translateY(-1px); }
 
     .btn-primary {
       background: var(--accent);
@@ -160,29 +147,37 @@
 
     .btn-secondary {
       border-color: var(--line);
-      background: rgba(255, 255, 255, 0.02);
+      background: rgba(255,255,255,0.02);
       color: var(--text);
+    }
+
+    .btn-whatsapp {
+      background: var(--whatsapp);
+      color: white;
+      box-shadow: 0 10px 24px rgba(37,211,102,0.28);
     }
 
     .hero-card,
     .card {
-      background: linear-gradient(180deg, rgba(255, 255, 255, 0.035), rgba(255, 255, 255, 0.02));
+      background: linear-gradient(180deg, rgba(255,255,255,0.035), rgba(255,255,255,0.02));
       border: 1px solid var(--line);
       border-radius: var(--radius);
       box-shadow: var(--shadow);
     }
 
-    .hero-card {
-      padding: 22px;
-    }
+    .hero-card { padding: 22px; }
 
     .hero-card img,
     .service-card img {
       width: 100%;
-      height: auto;
-      border-radius: 18px;
       display: block;
       object-fit: cover;
+      border-radius: 18px;
+    }
+
+    .hero-card img,
+    .service-card img {
+      aspect-ratio: 4 / 5;
     }
 
     .mini-grid {
@@ -195,7 +190,7 @@
     .mini-stat {
       padding: 14px;
       border-radius: 16px;
-      background: rgba(255, 255, 255, 0.03);
+      background: rgba(255,255,255,0.03);
       border: 1px solid var(--line);
     }
 
@@ -205,9 +200,7 @@
       margin-bottom: 4px;
     }
 
-    section {
-      padding: 24px 0 18px;
-    }
+    section { padding: 24px 0 18px; }
 
     .section-head {
       max-width: 800px;
@@ -248,13 +241,9 @@
       gap: 18px;
     }
 
-    .service-grid {
-      grid-template-columns: repeat(3, 1fr);
-    }
+    .service-grid { grid-template-columns: repeat(3, 1fr); }
 
-    .service-card {
-      overflow: hidden;
-    }
+    .service-card { overflow: hidden; }
 
     .service-card h3,
     .price-card h3 {
@@ -276,9 +265,7 @@
       margin: 14px 0 0;
     }
 
-    li {
-      margin-bottom: 8px;
-    }
+    li { margin-bottom: 8px; }
 
     .badges {
       display: flex;
@@ -293,12 +280,10 @@
       border-radius: 999px;
       font-size: 13px;
       color: var(--text);
-      background: rgba(255, 255, 255, 0.03);
+      background: rgba(255,255,255,0.03);
     }
 
-    .steps {
-      grid-template-columns: repeat(3, 1fr);
-    }
+    .steps { grid-template-columns: repeat(3, 1fr); }
 
     .step-number {
       width: 42px;
@@ -313,13 +298,11 @@
       margin-bottom: 14px;
     }
 
-    .price-grid {
-      grid-template-columns: repeat(3, 1fr);
-    }
+    .price-grid { grid-template-columns: repeat(3, 1fr); }
 
     .price-card.featured {
-      border: 1px solid rgba(215, 255, 92, 0.35);
-      background: linear-gradient(180deg, rgba(215, 255, 92, 0.08), rgba(255, 255, 255, 0.03));
+      border: 1px solid rgba(215,255,92,0.35);
+      background: linear-gradient(180deg, rgba(215,255,92,0.08), rgba(255,255,255,0.03));
       transform: translateY(-4px);
     }
 
@@ -335,9 +318,7 @@
       color: var(--muted);
     }
 
-    .testimonial-grid {
-      grid-template-columns: repeat(3, 1fr);
-    }
+    .testimonial-grid { grid-template-columns: repeat(3, 1fr); }
 
     .quote {
       font-size: 18px;
@@ -423,15 +404,12 @@
     <div class="container hero-grid">
       <div>
         <span class="eyebrow">Coaching online personalizzato</span>
-        <h1>
-          Fitness, <span class="accent">corsa</span> e
-          <span class="accent-2">padel</span> con un percorso davvero su misura.
-        </h1>
+        <h1>Fitness, <span class="accent">corsa</span> e <span class="accent-2">padel</span> con un percorso davvero su misura.</h1>
         <p>
-          Coaching online per fitness, corsa e padel. Programmi personalizzati, semplici e
-          sostenibili. Sono Filippo Denti: ragazzo multiatleta, laureato in Scienze Motorie (L-22)
-          e istruttore FITP di padel. Metto a disposizione competenze, metodo e passione per
-          aiutarti a migliorare forma fisica, performance e continuità.
+          Coaching online per fitness, corsa e padel. Programmi personalizzati, semplici e sostenibili.
+          Sono Filippo Denti: ragazzo multiatleta, laureato in Scienze Motorie (L-22) e istruttore FITP di padel.
+          Metto a disposizione competenze, metodo e passione per aiutarti a migliorare forma fisica,
+          performance e continuità.
         </p>
         <div class="actions">
           <a
@@ -459,10 +437,7 @@
       </div>
 
       <div class="hero-card">
-        <img
-          src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=1200&q=80"
-          alt="Allenamento fitness"
-        />
+        <img src="fitness-coaching.jpg" alt="Filippo Denti allenamento fitness" />
         <div class="badges">
           <span class="badge">Massa pulita</span>
           <span class="badge">Running</span>
@@ -484,9 +459,9 @@
         <div class="card">
           <h3>Il mio approccio</h3>
           <p>
-            Credo in un allenamento costruito sulla persona, non in schede standard uguali per
-            tutti. Ogni percorso viene impostato in base al tuo livello, ai tuoi obiettivi, al tuo
-            tempo disponibile e alla tua realtà quotidiana.
+            Credo in un allenamento costruito sulla persona, non in schede standard uguali per tutti.
+            Ogni percorso viene impostato in base al tuo livello, ai tuoi obiettivi, al tuo tempo
+            disponibile e alla tua realtà quotidiana.
           </p>
           <p>
             L’obiettivo è farti migliorare davvero, con metodo, progressione e continuità.
@@ -496,9 +471,9 @@
         <div class="card">
           <h3>Profilo professionale</h3>
           <p>
-            Sono un ragazzo multiatleta, laureato in Scienze Motorie (L-22) e istruttore FITP di
-            padel. Metto a disposizione il mio background sportivo per aiutarti con percorsi online
-            dedicati a fitness, corsa e preparazione fisica per il padel.
+            Sono un ragazzo multiatleta, laureato in Scienze Motorie (L-22) e istruttore FITP di padel.
+            Metto a disposizione il mio background sportivo per aiutarti con percorsi online dedicati a
+            fitness, corsa e preparazione fisica specifica per sport di racchetta e performance.
           </p>
           <div class="badges">
             <span class="badge">Laurea L-22</span>
@@ -515,55 +490,52 @@
     <div class="container">
       <div class="section-head">
         <h2>I miei percorsi</h2>
-        <p>
-          Tre aree di lavoro specifiche, con programmi pensati per obiettivi chiari e risultati
-          concreti.
-        </p>
+        <p>Tre aree di lavoro specifiche, con programmi pensati per obiettivi chiari e risultati concreti.</p>
       </div>
 
       <div class="service-grid">
         <article class="service-card card">
-          <img
-            src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1200&q=80"
-            alt="Allenamento fitness in palestra"
-          />
+          <img src="running-coaching.jpg" alt="Filippo Denti running coaching" />
+          <h3>Running Coaching</h3>
+          <p>
+            Programmi per chi vuole iniziare a correre bene o migliorare rendimento, continuità
+            e composizione fisica anche attraverso la corsa.
+          </p>
+          <ul>
+            <li>Avviamento alla corsa da zero</li>
+            <li>Miglioramento di ritmo e resistenza</li>
+            <li>Preparazione 5K e 10K</li>
+            <li>Lavoro utile anche per chi vuole rimettersi in forma seriamente</li>
+          </ul>
+        </article>
+
+        <article class="service-card card">
+          <img src="padel-performance.jpg" alt="Filippo Denti padel performance" />
+          <h3>Padel Performance</h3>
+          <p>
+            Preparazione fisica complementare per chi vuole stare meglio in campo, muoversi con più qualità
+            e migliorare la resa atletica nel padel.
+          </p>
+          <ul>
+            <li>Rapidità, reattività e cambi di direzione</li>
+            <li>Forza funzionale per il gesto sportivo</li>
+            <li>Mobilità, core stability e prevenzione infortuni</li>
+            <li>Lavoro serio per chi vuole spingere di più anche nel gioco</li>
+          </ul>
+        </article>
+
+        <article class="service-card card">
+          <img src="fitness-coaching.jpg" alt="Filippo Denti fitness coaching" />
           <h3>Fitness Coaching</h3>
-          <p>Percorsi per migliorare composizione corporea, forza e condizione generale.</p>
+          <p>
+            Percorsi per migliorare composizione corporea, forza e condizione generale con
+            un programma strutturato e sostenibile.
+          </p>
           <ul>
             <li>Massa muscolare e massa pulita</li>
             <li>Definizione e ricomposizione corporea</li>
             <li>Forza generale e miglioramento performance</li>
             <li>Programmazione sostenibile in base ai tuoi orari</li>
-          </ul>
-        </article>
-
-        <article class="service-card card">
-          <img
-            src="https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?auto=format&fit=crop&w=1200&q=80"
-            alt="Allenamento running all'aperto"
-          />
-          <h3>Running Coaching</h3>
-          <p>Programmi per chi vuole iniziare a correre bene o migliorare rendimento e continuità.</p>
-          <ul>
-            <li>Avviamento alla corsa da zero</li>
-            <li>Miglioramento di ritmo e resistenza</li>
-            <li>Preparazione 5K e 10K</li>
-            <li>Gestione progressiva dei carichi di lavoro</li>
-          </ul>
-        </article>
-
-        <article class="service-card card">
-          <img
-            src="https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&w=1200&q=80"
-            alt="Preparazione atletica per sport di racchetta"
-          />
-          <h3>Padel Performance</h3>
-          <p>Preparazione fisica complementare per chi vuole stare meglio in campo e performare di più.</p>
-          <ul>
-            <li>Rapidità, reattività e cambi di direzione</li>
-            <li>Forza funzionale per il gesto sportivo</li>
-            <li>Mobilità e core stability</li>
-            <li>Prevenzione infortuni e recupero atletico</li>
           </ul>
         </article>
       </div>
@@ -592,7 +564,7 @@
           <h3>Programma personalizzato</h3>
           <p>
             Imposto un piano adatto a te: pratico, realistico e costruito in base alla tua
-            situazione.
+            situazione e al tuo sport.
           </p>
         </div>
 
@@ -600,8 +572,7 @@
           <div class="step-number">3</div>
           <h3>Supporto e progressi</h3>
           <p>
-            Monitoriamo andamento, feedback e risultati per migliorare nel tempo e mantenere
-            continuità.
+            Monitoriamo andamento, feedback e risultati per migliorare nel tempo e mantenere continuità.
           </p>
         </div>
       </div>
@@ -630,23 +601,26 @@
         <div class="price-card card featured">
           <h3>Performance</h3>
           <div class="price">25,99€/mese</div>
-          <p>Il piano più completo per continuità, risultati e supporto.</p>
+          <p>Per chi vuole continuità, struttura e un aggiornamento più frequente.</p>
           <ul>
             <li>Programma completo personalizzato</li>
-            <li>Aggiornamenti periodici</li>
-            <li>Supporto più continuativo</li>
+            <li>Aggiornamenti ogni 14 giorni</li>
+            <li>Più controllo sul percorso</li>
           </ul>
           <div class="small-note">Consigliato per la maggior parte delle persone</div>
         </div>
 
         <div class="price-card card">
-          <h3>Padel Athlete</h3>
+          <h3>Pro Athlete</h3>
           <div class="price">29,00€/mese</div>
-          <p>Per chi gioca a padel e vuole lavorare in modo più specifico.</p>
+          <p>
+            Per chi vuole mettersi sotto seriamente: correre meglio, giocare padel e lavorare
+            con maggiore intensità e costanza.
+          </p>
           <ul>
-            <li>Preparazione atletica padel-specifica</li>
-            <li>Focus su mobilità e rapidità</li>
-            <li>Supporto orientato alla performance</li>
+            <li>Aggiornamento ogni 7 giorni</li>
+            <li>Supporto costante</li>
+            <li>Ideale per chi vuole lavorare seriamente sulla performance</li>
           </ul>
         </div>
       </div>
@@ -663,23 +637,17 @@
       <div class="testimonial-grid">
         <div class="testimonial card">
           <div class="quote">Allenamenti chiari e sostenibili</div>
-          <p>
-            Ogni percorso è pensato per essere applicabile davvero, senza complicazioni inutili.
-          </p>
+          <p>Ogni percorso è pensato per essere applicabile davvero, senza complicazioni inutili.</p>
         </div>
 
         <div class="testimonial card">
           <div class="quote">Approccio pratico e personalizzato</div>
-          <p>
-            Nessun copia-incolla: il lavoro parte dalle tue esigenze reali e dai tuoi obiettivi.
-          </p>
+          <p>Nessun copia-incolla: il lavoro parte dalle tue esigenze reali e dai tuoi obiettivi.</p>
         </div>
 
         <div class="testimonial card">
           <div class="quote">Supporto online diretto</div>
-          <p>
-            Rimani seguito durante il percorso, con una comunicazione semplice e concreta.
-          </p>
+          <p>Rimani seguito durante il percorso, con una comunicazione semplice e concreta.</p>
         </div>
       </div>
     </div>
@@ -695,18 +663,9 @@
       <div class="contact-wrap">
         <div class="contact-card card">
           <h3>Contatti diretti</h3>
-          <p>
-            <strong>WhatsApp:</strong>
-            <a href="https://wa.me/393481633096" target="_blank" rel="noopener">3481633096</a>
-          </p>
-          <p>
-            <strong>Email:</strong>
-            <a href="mailto:fily.denti@gmail.com">fily.denti@gmail.com</a>
-          </p>
-          <p>
-            <strong>Instagram:</strong>
-            <a href="https://instagram.com/filippodentiii" target="_blank" rel="noopener">@filippodentiii</a>
-          </p>
+          <p><strong>WhatsApp:</strong> <a href="https://wa.me/393481633096" target="_blank" rel="noopener">3481633096</a></p>
+          <p><strong>Email:</strong> <a href="mailto:fily.denti@gmail.com">fily.denti@gmail.com</a></p>
+          <p><strong>Instagram:</strong> <a href="https://instagram.com/filippodentiii" target="_blank" rel="noopener">@filippodentiii</a></p>
         </div>
 
         <div class="contact-card card">
@@ -719,7 +678,7 @@
           </ul>
           <div class="actions">
             <a
-              class="btn btn-primary"
+              class="btn btn-whatsapp"
               href="https://wa.me/393481633096?text=Ciao%20Filippo%2C%20vorrei%20iniziare%20un%20percorso%20con%20te"
               target="_blank"
               rel="noopener"
