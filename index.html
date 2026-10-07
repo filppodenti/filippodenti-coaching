@@ -12,7 +12,7 @@
 .navin{height:66px;display:flex;align-items:center;justify-content:space-between}.logo{font-weight:900;letter-spacing:1.8px;font-size:14px}.logo-mark{display:inline-flex;align-items:center;justify-content:center;width:27px;height:27px;border:2px solid var(--accent);border-radius:50%;margin-right:8px;font-size:10px;color:var(--accent);letter-spacing:-.5px}.logo span{color:var(--accent)}nav a{text-decoration:none;margin-left:18px;color:#a7abb4;font-size:13px}
 .hero{padding:68px 0 55px}.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:42px;align-items:center}.kicker{color:var(--accent);font-weight:900;letter-spacing:2.5px;font-size:12px}
 h1{font-size:clamp(44px,6vw,72px);line-height:.98;letter-spacing:-2.5px;margin:14px 0 20px}h1 em{color:var(--accent);font-style:normal}.lead{font-size:20px;color:var(--muted)}
-.cta{display:inline-block;margin-top:24px;transition:transform .18s ease,box-shadow .18s ease}.cta:hover{transform:translateY(-2px);box-shadow:0 8px 24px #d7ff3830}background:var(--accent);color:#08090b;text-decoration:none;font-weight:900;padding:16px 21px;border-radius:12px}.secondary{display:inline-block;margin:24px 0 0 8px;border:1px solid #30343c;padding:15px 20px;border-radius:12px;text-decoration:none}
+.cta{display:inline-block;margin-top:24px;background:var(--accent);color:#08090b;text-decoration:none;font-weight:900;padding:16px 21px;border-radius:12px;transition:transform .18s ease,box-shadow .18s ease}.cta:hover{transform:translateY(-2px);box-shadow:0 8px 24px #d7ff3830}.secondary{display:inline-block;margin:24px 0 0 8px;border:1px solid #30343c;padding:15px 20px;border-radius:12px;text-decoration:none}
 .hero-img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:24px;border:1px solid var(--line)}
 section{padding:72px 0}section:nth-of-type(even){background:#0b0c0f}.sub{color:var(--muted);max-width:730px}h2{font-size:36px;line-height:1.05;margin:10px 0 14px}
 .cards,.steps,.testimonials{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:25px}.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:20px}.card b{display:block;margin:6px 0}.card p{color:var(--muted);font-size:14px}.num{color:var(--accent);font-weight:900}
@@ -27,10 +27,10 @@ footer{border-top:1px solid var(--line);padding:30px 0;color:#70757e;font-size:1
 </style>
 </head>
 <body>
-<nav><div class="container navin"><div class="logo"><span class="logo-mark">FD</span>FILIPPO <span>DENTI</span> / PERFORMANCE</div><div class="links"><a href="#chi-sono">Chi sono</a><a href="#servizi">Servizi</a><a href="#test">Test</a><a href="#contatti">Contatti</a></div></div></nav>
+<nav><div class="container navin"><div class="logo"><span class="logo-mark">FD</span>FILIPPO <span>DENTI</span> / PERFORMANCE</div><div class="links"><a href="#chi-sono">Chi sono</a><a href="#servizi">Servizi</a><a href="#prezzi">Prezzi</a><a href="#test">Test</a><a href="#contatti">Contatti</a></div></div></nav>
 
 <header class="hero"><div class="container hero-grid">
-<div><div class="kicker">FILIPPO DENTI PERFORMANCE</div><div class="muted" style="font-size:11px;letter-spacing:1.5px;margin-top:7px">PREPARAZIONE ATLETICA · CREMA E PROVINCIA</div>
+<div><div class="kicker">FILIPPO DENTI PERFORMANCE</div><div class="muted" style="font-size:11px;letter-spacing:1.5px;margin-top:7px">PREPARAZIONE ATLETICA · CREMA · PROVINCIA · ONLINE</div>
 <h1>Allenati meglio.<br><em>Rendilo concreto.</em></h1>
 <p class="lead">Preparazione atletica per chi vuole migliorare davvero. Padel, running e fitness attraverso percorsi personalizzati, misurabili e costruiti sul tuo obiettivo.</p>
 <a class="cta" href="https://wa.me/393481633096?text=Ciao%20Filippo%2C%20vorrei%20prenotare%20il%20Performance%20Test%20gratuito.%0A%0ANome%3A%0ALivello%3A%0ASport%3A%0AObiettivo%3A" target="_blank" rel="noopener">PRENOTA IL PERFORMANCE TEST →</a>
@@ -53,6 +53,21 @@ footer{border-top:1px solid var(--line);padding:30px 0;color:#70757e;font-size:1
 <div class="card"><span class="num">03</span><b>🏃 Running</b><p>Dalla prima corsa alla preparazione di 5K, 10K e distanze più lunghe, con lavoro di forza e programmazione progressiva.</p></div>
 <div class="card"><span class="num">04</span><b>💪 Fitness & Coaching</b><p>Forza, condizionamento, composizione corporea e percorsi personalizzati costruiti intorno alla tua settimana.</p></div>
 </div></div></section>
+
+<section id="prezzi"><div class="container"><div class="kicker">SERVIZI & PREZZI</div><h2>Un percorso per ogni obiettivo.</h2><p class="sub">Prezzi lancio pensati per iniziare in modo semplice e accessibile. Le sessioni sono in presenza a Crema e provincia; il coaching è disponibile anche online.</p>
+<div class="cards">
+<div class="card"><span class="num">01</span><b>⚡ Preparazione Atletica</b><p>Forza, velocità, potenza, agilità e resistenza.</p><div class="price">€20</div><p class="muted">singola · 5 €90 · 10 €150</p></div>
+<div class="card"><span class="num">02</span><b>🏋️ Fitness Coaching 1:1</b><p>Forza, massa muscolare, dimagrimento e condizionamento.</p><div class="price">€20</div><p class="muted">singola · 5 €80 · 10 €150</p></div>
+<div class="card"><span class="num">03</span><b>🎾 Padel Performance</b><p>Preparazione atletica specifica per il padel.</p><div class="price">€20</div><p class="muted">singola · 5 €90 · 10 €150</p></div>
+<div class="card"><span class="num">04</span><b>🏃 Running Coach</b><p>Programmazione e gestione dell'allenamento di corsa.</p><div class="price">€30<span style="font-size:14px">/mese</span></div></div>
+</div>
+<div class="booking" style="margin-top:14px">
+<div class="card"><div class="kicker">🎾 LEZIONI DI PADEL</div><h3>Lezione tecnica</h3><ul><li><b>1:1</b> · 1 ora → €50</li><li><b>1:1</b> · 10 lezioni → €450</li><li><b>2 persone</b> · 1h30 → €30 a persona</li><li><b>3 persone</b> · 1h30 → €20 a persona</li></ul></div>
+<div class="card"><div class="kicker">💻 COACHING ONLINE</div><h3>Seguito anche a distanza</h3><ul><li><b>Online Start</b> → €29/mese</li><li><b>Online Coaching</b> → €49/mese</li></ul><p class="muted">Start: programmazione, scheda, video esercizi e aggiornamento mensile. Coaching: in più monitoraggio, feedback, modifiche durante il mese e assistenza più diretta.</p></div>
+</div>
+<div class="highlight">Non sai quale servizio fa per te? Parti dal <b>Performance Test gratuito</b> e capiamo insieme da dove iniziare.</div>
+<a class="cta" href="https://wa.me/393481633096?text=Ciao%20Filippo%2C%20vorrei%20avere%20informazioni%20sui%20tuoi%20servizi%20e%20prenotare%20il%20Performance%20Test%20gratuito." target="_blank" rel="noopener">CHIEDI INFORMAZIONI →</a>
+</div></section>
 
 <section id="test"><div class="container"><div class="kicker">PERFORMANCE TEST</div><h2>Scopri come ti muovi.<br><em style="color:var(--accent);font-style:normal">Poi allenati meglio.</em></h2>
 <p class="sub">Una valutazione fisica generale pensata per fotografare le principali capacità motorie e capire da dove partire. Non serve essere già allenati: serve avere un obiettivo.</p>
@@ -105,7 +120,7 @@ footer{border-top:1px solid var(--line);padding:30px 0;color:#70757e;font-size:1
 
 <section id="contatti"><div class="container"><div class="kicker">CONTATTI</div><h2>Pronto a iniziare?</h2><p class="sub">Scrivimi su WhatsApp, raccontami in due righe il tuo obiettivo e partiamo da lì. Se sei tra i primi clienti, possiamo iniziare dal Performance Test gratuito.</p>
 <a class="cta" href="https://wa.me/393481633096?text=Ciao%20Filippo%2C%20ti%20scrivo%20per%20parlarti%20del%20mio%20obiettivo." target="_blank" rel="noopener">SCRIVIMI SU WHATSAPP →</a>
-<a class="secondary" href="https://instagram.com/filippodentiii" target="_blank" rel="noopener">INSTAGRAM @FILIPPODENTIII</a><p class="muted" style="margin-top:22px;font-size:13px">📍 Crema e provincia · 📲 WhatsApp diretto · 🎾 Preparazione atletica, padel, running e fitness</p></div></section>
+<a class="secondary" href="https://instagram.com/filippodentiii" target="_blank" rel="noopener">INSTAGRAM @FILIPPODENTIII</a><p class="muted" style="margin-top:22px;font-size:13px">📍 Crema · provincia · online · 📲 WhatsApp diretto · 🎾 Preparazione atletica, padel, running e fitness</p></div></section>
 
 <footer><div class="container">FILIPPO DENTI PERFORMANCE · Preparazione atletica · Padel · Running · Fitness<br><br>La valutazione è finalizzata alla performance e non costituisce valutazione o diagnosi sanitaria.</div></footer>
 </body></html>
